@@ -6,6 +6,17 @@ include <class> - parola trebuie obligatoriu să includă cel puțin un caracter
 ninclude <class> - parola trebuie obligatoriu să nu includă niciun caracter din clasa specificată; class urmează aceleași reguli de mai sus
 repetition <max_count> - același caracter se poate repeta pe poziții consecutive de maxim max_count ori; 0 < max_count
 consecutive <max_count> - parola poate avea max_count caractere consecutive în secvență; 0 < max_count
+
+INPUT EXAMPLE
+4
+length 6
+include 0
+include A
+repetition 2
+PimpMyPassword
+HoldMyB33r
+OnceUponAtimeinKansas
+1234
 */
 
 import java.util.*;
