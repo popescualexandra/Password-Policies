@@ -7,7 +7,8 @@ ninclude <class> - parola trebuie obligatoriu să nu includă niciun caracter di
 repetition <max_count> - același caracter se poate repeta pe poziții consecutive de maxim max_count ori; 0 < max_count
 consecutive <max_count> - parola poate avea max_count caractere consecutive în secvență; 0 < max_count
 
-INPUT EXAMPLE
+EXEMPLU INPUT SI OUTPUT:
+Input:
 4
 length 6
 include 0
@@ -17,6 +18,23 @@ PimpMyPassword
 HoldMyB33r
 OnceUponAtimeinKansas
 1234
+
+Output:
+PimpMyPassword
+Parola nu are unul din caracterele specificate
+NOK
+
+HoldMyB33r
+OK
+
+OnceUponAtimeinKansas
+Parola nu are unul din caracterele specificate
+NOK
+
+1234
+Numar prea mic de caractere
+Parola nu are unul din caracterele specificate
+NOK
 */
 
 import java.util.*;
@@ -403,8 +421,10 @@ public class Main{
             }
             if(ok == 1){
                 System.out.println("OK");
+                System.out.println();
             }else{
                 System.out.println("NOK"); 
+                System.out.println();
             }
             ok = 1;
         }
